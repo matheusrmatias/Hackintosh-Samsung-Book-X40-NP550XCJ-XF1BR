@@ -50,7 +50,7 @@ Item | Download
 | PenDrive 16GB| Obrigatório |
 | Mouse USB| Obrigatório |
 | Imagem do Big Sur| [⬇️ Download](https://www.olarila.com/topic/6278-olarila-vanilla-images-macos-installer/) |
-| EFI| [⬇️ Download]([https://www.olarila.com/topic/6278-olarila-vanilla-images-macos-installer/](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/releases/download/v1.0/SamungBookX40-BigSur.zip) |
+| EFI| [⬇️ Download](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/releases/download/v1.0/SamungBookX40-BigSur.zip) |
 | Balena Etcher| [⬇️ Download](https://etcher.balena.io/#download-etcher) |
 | Python | [⬇️ Download](https://www.python.org/downloads/) |
 | ProperTree| [⬇️ Download](https://github.com/corpnewt/ProperTree) |
