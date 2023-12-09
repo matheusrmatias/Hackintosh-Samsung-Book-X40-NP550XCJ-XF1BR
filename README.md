@@ -48,7 +48,7 @@ Nesse tópico irei abordar como proceder com a instalação do MacOS Big Sur no 
 Item | Download
 ------------- | ------------
 | PenDrive 4GB (mínimo)| Obrigatório |
-| Imagem de Recovery | [Veja Aqui](macrecovery/README.md) |
+| Imagem de Recovery | [Veja Aqui](macrecovery) |
 | EFI| [⬇️ Download](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/releases/download/v1.0/SamungBookX40-BigSur.zip) |
 | Python | [⬇️ Download](https://www.python.org/downloads/) |
 | OCAuxiliaryTools | [⬇️ Download](https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20230022) |
@@ -70,7 +70,7 @@ Após isso clique em `PI (PlataformInfo)` na lateral esquerda logo após em `Gen
 Nesta etapa siga os seguintes passos:
 - Formate o pen-drive para o sistema de arquivo `FAT-32`;
 - Mova a pasta EFI (com os serais já alterados) para a raiz do pen-drive;
-- Gere a imagem de recovery [aqui](macrecovery/README.md);
+- Gere a imagem de recovery [aqui](macrecovery);
 - Mova a pasta `com.apple.recovery.boot` para a raiz do pen-drive;
 
 ![Pen-Drive](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/97cfff5c-a0e6-437b-9bce-520d42debd38)
