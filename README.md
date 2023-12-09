@@ -4,25 +4,30 @@
 
 
 <p align="center">
-  <img width="500" height="500" src="https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/b606c576-8549-4b84-b737-b18d165dc012">
+  <img width="500" height="500" src="https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/983526c0-73de-4359-9eb5-95d8be524db7">
 </p>
 
-Dispositivo | Status
-------------- | ------------
-| 🤖 Intel® Core™ i5-10210U | ✅ Funciona Normalmente |
-| 💻 Gráficos UHD Intel® 620 | ✅ Funciona Normalmente |
-| 💻 Nvidia GeForce Mx110 | ❌ Não Funciona |
-| 🔥 8GB de RAM | ✅ Funciona Normalmente |
-| 📁 SanDisk SSD Plus 480GB | ✅ Funciona Normalmente |
-| 🛜 Wi-fi | ✅ Funciona Via HeliPort |
-| 📡 Bluetooth | ✅ Funciona Normalmente |
-| 🖱️ TouchPad e Gestos | ✅ Funciona Normalmente |
-| 🔊 Aúdio | ✅ Funciona Normalmente |
-| ☀️ Brilho da Tela | ❌ Não Funciona |
-| 🪫 Carregamento e Bateria | ✅ Funciona Normalmente |
+<p align="center">
 
+| Dispositivo                         | Status                  |
+------------------------------------- | ----------------------- |
+| 🤖 Intel® Core™ i5-10210U           | ✅ Funciona Normalmente |
+| 💻 Gráficos UHD Intel® 620          | ✅ Funciona Normalmente |
+| 🔥 8GB de RAM                       | ✅ Funciona Normalmente |
+| 📁 SanDisk SSD Plus 480GB           | ✅ Funciona Normalmente |
+| 🛜 Wi-fi Intel Wireless-AC 9462     | ✅ Funciona Nativamente |
+| 📡 Bluetooth Intel Wireless-AC 9462 | ✅ Funciona Nativamente |
+| 🌐 Realtek PCIe                      | ➖ Não Testado          |
+| 🖱️ TouchPad HID                     | ✅ Funciona Normalmente |
+| ⌨️ Teclado P/2                       | ✅ Funciona Normalmente |
+| 🔊 Aúdio                            | ✅ Funciona Normalmente |
+| 🪫 Carregamento e Bateria           | ✅ Funciona Normalmente |
+| ☀️ Brilho da Tela                   | ❌ Não Funciona         |
+| 💻 Nvidia GeForce Mx110             | ❌ Não Funciona         |
 
-![X40-Hackin-Info](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/b76d50e2-ed8d-4c50-b671-4384f5b7cc48)
+</p>
+
+![Estado do Mac](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/46ad75f8-2601-4de7-83a8-ef8239ab48f3)
 
 
 ## Guia de Instalação
@@ -31,134 +36,104 @@ Nesse tópico irei abordar como proceder com a instalação do MacOS Big Sur no 
 ❗Vale ressaltar que eu fiz algumas alterações no meu notebook, como por exemplo a substituição do HD de fábrica por um SSD, algo que eu recomendo expressamente para realizar o procedimento abaixo e obter sucesso.
 
 ### Índice
-- <a href="#o-que-será-necessário">(Passo 1) O que será necessário</a>
-- <a href="#criando-o-pen-drive-bootável">(Passo 2) Criando o Pen Drive Bootável</a>
-- <a href="#configurando-a-bios">(Passo 3) Configurando a BIOS</a>
-- <a href="#instalando-o-macos">(Passo 4) Instalando do MacOS</a>
-- <a href="#instalação-concluída-e-agora">(Passo 5) Instalação concluída e agora?</a>
-- <a href="#configurar-boot-sem-pendrive">(Passo 6) Configurar boot sem pendrive</a>
-- <a href="#configurando-o-wi-fi">(Passo 7) Configurando o Wi-Fi</a>
-- <a href="#alterando-o-serial">(Passo 8) Alterando o Serial</a>
-- <a href="#créditos">Créditos</a>
 
-#### O que será necessário
-Antes de tudo é importante ter a imagem do Big Sur e a EFI (disponível nesse repositório), como também alguns softwares que iram ser necessários para que a instalação seja bem sucedida, abaixo listo o que será necessário e onde pode ser feito o download.
-Algo que vale descatar é que caso você só tenha a máquina que fará a instalação do macOS veja <a href="#outra-forma-de-instalar"> Outra forma de Instalar</a>
+- [🏁 O que será necessário](#-o-que-será-necessário)
+- [💿 Alterando os Seriais](#-alterando-os-seriais)
+- [💾 Fazendo o pen-drive de boot](#-fazendo-o-pen-drive-de-boot)
+- [🔧 Configurando a BIOS](#-configurando-a-bios)
+- [🍎 Instalando o MacOS](#-instalando-o-macos)
+- [💾 Configurando EFI no macOS](#-configurando-efi-no-macos)
 
+#### 🏁 O que será necessário
 Item | Download
 ------------- | ------------
-| PenDrive 16GB| Obrigatório |
-| Mouse USB| Obrigatório |
-| Imagem do Big Sur| [⬇️ Download](https://www.olarila.com/topic/6278-olarila-vanilla-images-macos-installer/) |
+| PenDrive 4GB (mínimo)| Obrigatório |
+| Imagem de Recovery | [Veja Aqui](macrecovery\README.md) |
 | EFI| [⬇️ Download](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/releases/download/v1.0/SamungBookX40-BigSur.zip) |
-| Balena Etcher| [⬇️ Download](https://etcher.balena.io/#download-etcher) |
 | Python | [⬇️ Download](https://www.python.org/downloads/) |
-| ProperTree| [⬇️ Download](https://github.com/corpnewt/ProperTree) |
-| GenSMBIOS | [⬇️ Download](https://github.com/corpnewt/GenSMBIOS) |
-| MountEFI | [⬇️ Download](https://github.com/corpnewt/MountEFI) |
-| HeliPort| [⬇️ Download](https://github.com/OpenIntelWireless/HeliPort)|
+| OCAuxiliaryTools | [⬇️ Download](https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20230022) |
 
-❗É indispensável ter um pendrive de no mínimo 16GB e um mouse usb, pois o touchpad e teclado só funcionarão alguns passos após a instalação.
+#### 💿 Alterando os Seriais
+Está parte é extremamente importante para que a Apple reconheça o notebook como sendo oficial e liberando todos os recursos. Sendo assim:
+- Efetue o download da EFI dísponivel neste repositório;
+- Efetue o download do OCAuxiliaryTools;
 
-#### Criando o Pen Drive Bootável
-Com a imagem do Big Sur em mãos e um pendrive de no mínimo 16GB abra o software Balena Etcher siga os seguintes passos:
-1. Escolha a opção "Flash from file" e selecione a imagem que você fez o download;
-2. Após isso escolha "Select target" e selecione o seu pendrive;
-3. Em seguida clique em flash e aguarde processo de criação do pendrive bootável, essa etapa leva um tempo.
+Abra o OCAT (OCAuxiliaryTools), no canto superior esquerdo clique em `File`, depois em `Open` e selecione o arquivo `config.plist` dentro da pasta `EFI/OC`:
 
-![Balena Etcher](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/29b62940-d695-4d69-aea7-f4bd635fed3d)
+![OCAT Open File](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/1eff5556-e7d4-4d91-a8a4-04aabed2aa02)
 
-#### Configurando a BIOS
+Após isso clique em `PI (PlataformInfo)` na lateral esquerda logo após em `Genarate` na linha de `SystemProductName` e salve logo em seguida.
+
+![Captura de tela 2023-12-09 174223](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/d46802cc-8563-4006-8979-576270fab407)
+
+#### 💾 Fazendo o pen-drive de boot
+Nesta etapa siga os seguintes passos:
+- Formate o pen-drive para o sistema de arquivo `FAT-32`;
+- Mova a pasta EFI (com os serais já alterados) para a raiz do pen-drive;
+- Gere a imagem de recovery [aqui](macrecovery\README.md);
+- Mova a pasta `com.apple.recovery.boot` para a raiz do pen-drive;
+
+![Pen-Drive](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/97cfff5c-a0e6-437b-9bce-520d42debd38)
+
+
+Pronto, o pen-drive está pronto para dar boot.
+
+#### 🔧 Configurando a BIOS
 Desligue a máquina e insira o pendrive.
-Ao ligar a máquina aperte continuamente a tecla "F2" até que a mesma inicie a tela de configurações da BIOS.
+Ao ligar a máquina aperte continuamente a tecla `F2` até que a mesma inicie a tela de configurações da BIOS.
 
 ![Samsung BIOS](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/9e3981c2-3778-4adb-89c1-54a446d0f510)
 
 Após entrar nessa tela faça as seguintes configurações:
-- Na aba "Security" clique em "TPM Configuration" em seguida desabilite a opção "TPM Device";
-- Na aba "Boot" desabilite a opção "Secure Boot Control";
-- Ainda na aba "Boot" acesse "Boot Device Priority" e na opção "Boot Option #1" selecione o seu pendrive;
+- Na aba `Security` clique em `TPM Configuration` em seguida desabilite a opção `TPM Device`;
+- Na aba `Boot` desabilite a opção `Secure Boot Control`;
+- Ainda na aba `Boot` acesse `Boot Device Priority` e na opção `Boot Option #1` selecione o seu pendrive;
 
-Feito isso basta clicar em "Save" no lado direito que o computador irá iniciar o boot no pendrive.
+Feito isso basta clicar em `Save` no lado direito que o computador irá iniciar o boot no pendrive.
 
-#### Instalando o MacOS
+❗ Caso dê erro de boot faça o seguinte:
+- Quando o computador estiver iniciando o boot no pen-drive presisone as teclas `Windows` + `Alt` + `r` até que apareça a logo da Apple;
+- Pressionar essar teclas resetará a nvram e forçará o boot na imagem de recuperação;
 
-❗Nessa etapa é de suma importância o mouse estar conectado no notebook para ser possível realizar a instalação.
 
-- Após o boot selecione a opção "Install macOS Big Sur".
+#### 🍎 Instalando o MacOS
+Nessa parte é importante estar próximo à uma rede Wi-Fi, preferencialmente estável, para ser possível realizar o download e instalação do macOS.
 
-- Vá até "Utilitário de Disco" selecione seu HD ou SSD que deseja realizar a instalação e em seguida no topo do janela selecione "Apagar" e selecione o formato APFS.
+Primeiro acesse `Disk Utility` e formate a seu armazenamento para `APFS`
 
-- Feche a aba de "Utilitário de Disco" e clique em "Instalação do macOS Big Sur", aceite os termos, selecione seu disco formatado anteriormente e aguarde o fim da instalação.
+![Captura de tela 2023-12-09 181124](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/5a00fd9e-9f90-4371-be1b-6aa85b9450fe)
 
-#### Instalação Concluída e Agora?
-Antes de configurar seu usuário é necessário mudar o EFI de boot, sendo assim desligue o computador e em outro formate o pendrive e coloque os seguintes arquivos nele:
+Logo em seguida vá em `REinstall macOS Big Sur` e prossiga normalmente com a instalação
 
-- A pasta EFI;
-- Python
-- ProperTree;
-- MountEFI
-- GenSMBIOS
-- HeliPort
+#### 💾 Configurando EFI no macOS
+Essa etapa é essencial para que o sistema **inicialize sem o pen-drive**, sendo assim, após realizar toda a instalação e o macOS já abrir na tela inicial, faça:
 
-Feito isso basta dar boot novamente no computador através do pen-drive, o sistema já estará instalado e o pendrive vai ser utilizado para dar boot.
+- Clique em `Finder` no canto superior esquerdo e depois em `Preferências` e ative `Discos rígidos`
 
-#### Configurar Boot Sem PenDrive
-Com a máquina inicializada, já na tela do macOS pronto para uso é necessário configurar alguns arquivos para que o pendrive não seja mais necessário para inicializar a máquina, sendo assim:
-- Faça a instalação do Python;
-- Na pasta do "MountEFI" clique em "Mount EFI Automator Quick Action.zip" e execute o arquivo extraído fazendo sua instalação.
-
-![Instalação Mount EFI](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/f463b0bf-32c7-479e-8438-afc1e7583425)
-
-Feito isso na tela inicial clique em "Finder" depois em "Preferências" e habilite "Discos rígidos".
 ![Habilitar Discos Rígidos](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/59545367-5bc9-496b-9a00-257a98a52383)
 
-Dessa forma a tela inicial irá mostrar os volumes dos discos rígidos. Clique com o botão direito (no caso do mac os dois dedos) no volume onde está a instalação e em seguida em "Mount EFI" e digite sua senha, assim aparecerá um novo volume na tela inicial.
+- Abra o `Terminal` e digite o seguinte comando:
+  ```zsh
+  sudo su -
+  ```
+- Digite sua senha e pressione `Enter`;
+- Digite o seguinte comando:
+  ```bash
+  diskutil list
+  ```
+- Após isso digite o seguinte comando com o identificador do `EFI` na lista que o último comando exibiu:
+  ```bash
+  diskutil mount disk#s#
+  # Substitua o '#' pelo correspondente na lista
+  ```
+![Disco no Terminal](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/d255c297-491e-4b84-9b36-d146c1ac2f90)
 
-![Captura de Tela 2023-10-26 às 12 56 04](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/c84a0c32-4c50-469e-93f5-e2dc3d24b5ea)
+O armazenamento da `EFI` agora ficará disponível na tela inicial, abra e cole a pasta `EFI` do pen-drive diretamente nela:
 
-Entre no volume "System" e apague a pasta EFI, posteriormente copie a pasta EFI que estiver no pendrive para essa pasta.
-Pronto, agora o sistema inicializará sem o pendrive.
+![Captura de Tela 2023-12-09 às 19 06 12](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/001b2e55-241b-4c82-87c9-2e5e24c6103a) 
 
-#### Configurando o Wi-Fi
-Como mencionado no início desse README o wi-fi só funcionará via HeliPort, sendo assim, basta executar o arquivo "HeliPort.dmg" e realizar sua instalação. Após instalado basta abri-lo e selecionar a rede Wi-Fi através do segundo ícone de Wi-Fi no canto superior direito do macOS.
+Ejete o pen-drive e reinicie o computador.
 
-#### Alterando o Serial
-Essa é uma etapa crucial para garantir que o macOS possua algumas funcionalidades, pois iremos colocar um serial que a Apple reconheça como sendo um dispositivo dela.
-- Para começar execute o "GenSMBIOS.command", após isso digite 3 e pressione a tecla "Enter", aguarde o programa baixar os pacotes necessários e pressione "Enter" novamente;
-![GenSMBIOS 1](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/cea0c9a2-52bb-4d0c-938e-ce0dfc4430f4)
-- Nessa tela digite "MacBookPro16,3" e precione "Enter";
-![GenSMBIOS 2](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/da4413a8-9c62-4910-9dd0-576cb45ea000)
-- Ele irá gerar alguns seriais que usaremos adiante.
-![GenSMBIOS 3](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/49d18e07-8063-4479-b6aa-79e03f954a9a)
-- Mantenha a aba com os códigos gerados aberta e execute o "ProperTree.command"
-- Com o ProperTree aberto, clique em "File" em seguida "Open" e selecione o arquivo "config.plist" disponível em "SYSTEM/EFI/OC"
-![ProperTree 1](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/85a303f1-d28c-4555-a289-2887e4877645)
-- Após abrir o arquivo substitua os seguintes campos da aba "PlataformInfo/Generic":
-  - O valor "Board Serial" do "GenSMBIOS" deve substituir o valor de "MLB"
-  - O valor "Serial" deve substituir o valor do "SystemSerialNumber"
-  - O valor "SmUUID" deve substituir o valor do "SystemUUID"
+## Pronto MacOS instalado com sucesso!!!
 
-ProperTree | GenSMBIOS
-------------- | ------------
-| MLB| Board Serial |
-| SystemSerialNumber | Serial |
-| SystemUUID| SmUUID |
-
-![ProperTree 2](https://github.com/matheusrmatias/Hackintosh-Samsung-Book-X40-NP550XCJ-XF1BR/assets/115509118/acb2ea81-39fb-404e-8852-c40f375de61d)
-
-Feito isso basta salvar as alterações do "Config.plist" e reiniciar o computador.
-
-##### Agora sua máquina está pronta !!!
-
-## Créditos
-
-A EFI base eu utilizei do [taarkov](https://github.com/taarkov/Honor-MagicBook-X15-Hackintosh) que fez o hackintosh num Honor MagicBook X15 que possui o mesmo processador do Samsung Book X40 (i5-10210u).
-Fora isso adicionei algumas Kexts adicionais (cujas quais não me recordo de onde retirei) para que houvesse pleno funcinamento de alguns dispositivos.
-
-[➡️ taarkov](https://github.com/taarkov/)
-[➡️ Python](https://www.python.org/downloads/)
-[➡️ ProperTree](https://github.com/corpnewt/ProperTree)
-[➡️ GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
-[➡️ MountEFI](https://github.com/corpnewt/MountEFI) 
-[➡️ HeliPort](https://github.com/OpenIntelWireless/HeliPort)
+[def]: #samsung-book-x40-hackintosh
